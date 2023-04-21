@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,500;0,700;1,100;1,300;1,400;1,500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.profilecard__container{
+    position: absolute;
+    top: 80px;
+    left: 80px;
+    height: 73px;
+    width:  239px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    font-family: "Roboto",sans-serif;
+    font-style: normal;
+    position: relative;
+    
+}
+
+.profilecard__content{
+        position: absolute;
+        top: 14px;
+        left: 61px;
+        display: flex;
+        flex-direction:column;
+}
+
+.profilecard__name{
+    letter-spacing: 0.15px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18.75px;
+
+}
+
+.profilecard__desc{
+    font-size: 12px;
+    color: #767676;
+    font-style:normal;
+    line-height: 14px;
+    letter-spacing: 0.15px;
+}
+.profilecard__container{
+    position: relative;
+}
+ .profilecard__status{
+    background: #19E26A;
+    height: 5px;
+    width: 5px;
+    border-radius: 50%;  
+    margin: 10px 7px 0 3px;
+}
+
+.status__isActive{
+    background: #19E26A;
+}
+.status__isInActive{
+    background: gray;
+}
+
+.card-wrapper{
+    display: flex;
+}
+
+.profilecard__avatar{
+    background-color: #6200EE;
+    height: 40px;
+    width: 40px;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 13px;
+    left: 14px;
+    font-size: 20px;
+    font-weight: 500;
+    color: #fff;
+    line-height: 23.44px;
+    letter-spacing: 0.15px;
+    margin-right: 21px;
+
+}
+
+.progress-bar {
+    background-color: #ffffff;
+    width: 164px;
+    height: 6px;
+    border: none;
+    margin-top: 7px;
+    border-radius: 5.5px;
+  }
+  
+  .progress {
+    border-radius: 5.5px;
+    width: 92.6px;
+    height: 6px;
+    background: #922ee0;
+  }
+  
