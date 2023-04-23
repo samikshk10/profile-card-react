@@ -1,42 +1,27 @@
-import { Component } from "react";
 import "./assets/css/profilecard.css";
 import Avatar from "./components/avatar";
 import Progress from "./components/progress";
+import ActiveStatus from "./components/ActiveStatus";
+import FullName from "./components/FullName";
+import Designation from "./components/Designation";
 
-class ProfileCard extends Component{
+function ProfileCard(props){ 
 
-    constructor(){
-        super();
-        this.state={};
-    }
-    render(props){
            return(
              <div className="profilecard__container">
-
-                <Avatar initial={this.props.name.slice(0,1)}/>
+                <Avatar initial={props?.full_name.slice(0,1) || "-" }/>
                     <div className="profilecard__content">
                         <div className="card-wrapper">
-                        <div className="profilecard__name">{this.props.name}</div>
-
-                    
-                                <div  className={
-            this.props.active
-              ? "profilecard__status status__isActive"
-              : "profilecard__status status__isInActive"
-          }>
-           </div>
+                       <FullName full_name={props?.full_name || "----"}/>
+                              <ActiveStatus status={props?.active_status || "in_active"}/>
                         </div>
-
-                        
-                            <div className="profilecard__desc">{this.props.desc}</div>
-                            <Progress progress={this.props.progress} ></Progress>
-                   
+                        <Designation designation={props?.designation}/>
+                            <Progress progress={props?.age || 18} ></Progress>
                      </div>
-                 
             </div>
 
            );
-    }
+    
 }
 
 export default ProfileCard;

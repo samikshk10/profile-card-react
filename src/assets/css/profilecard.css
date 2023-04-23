@@ -6,6 +6,12 @@
     box-sizing: border-box;
 }
 
+body{
+    background: whitesmoke;
+    font-family: "Roboto",sans-serif;
+
+}
+
 .profilecard__container{
     position: absolute;
     top: 80px;
@@ -33,7 +39,6 @@
     font-weight: 500;
     font-size: 16px;
     line-height: 18.75px;
-
 }
 
 .profilecard__desc{
@@ -41,6 +46,7 @@
     color: #767676;
     font-style:normal;
     line-height: 14px;
+    font-weight: 400;
     letter-spacing: 0.15px;
 }
 .profilecard__container{
@@ -48,10 +54,14 @@
 }
  .profilecard__status{
     background: #19E26A;
-    height: 5px;
-    width: 5px;
-    border-radius: 50%;  
+  padding: 2px 14px 2px 14px;
+  text-align: center;
+  color: #ffffff;
+    border-radius:9px;  
+    font-size: 11px;
+    font-weight: 400;
     margin: 10px 7px 0 3px;
+    text-transform: capitalize;
 }
 
 .status__isActive{
@@ -59,6 +69,9 @@
 }
 .status__isInActive{
     background: gray;
+}
+.status__isBlocked{
+    background: red;
 }
 
 .card-wrapper{
@@ -73,9 +86,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    position: absolute;
-    top: 13px;
-    left: 14px;
     font-size: 20px;
     font-weight: 500;
     color: #fff;
@@ -87,18 +97,128 @@
 }
 
 .progress-bar {
-    background-color: #ffffff;
-    width: 164px;
-    height: 6px;
+    background-color:#F0F0F0;
+    width: 104px;
+    height: 13px;
     border: none;
-    margin-top: 7px;
+  
     border-radius: 5.5px;
+
   }
   
   .progress {
     border-radius: 5.5px;
     width: 92.6px;
-    height: 6px;
-    background: #922ee0;
+    height: 13px;
+    background: #19E26A;
+    transition: 1s ease;
+    transition-delay: 0.8s;
   }
+
+  /* for table */
+
+  .table__container{
+    position:absolute;
+    top: 142px;
+    left: 280px;
+  }
+
+
+table{
+  border-collapse: separate;
+  border-spacing: 0 7px;
+  align-items: center;
+}
+
+thead{
+  height: 47px;
+  background-color: #ffffff;
+}
+thead tr> th{
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 12.89px;
+    letter-spacing: 0.15px;
+    text-align: left;
+}
+
+tbody tr> td :nth-child(5)
+
+{
+ display: flex;
+ gap: 10px;
+
+}
+
+tbody:before {
+  content: "";
+  display: block;
+  line-height: 9px;
+  color: transparent;
+}
+tbody td {
+  height: 56px;
+  background-color: #ffffff;
+
+}
+
+tbody tr{
+  border-radius: 4px;
+  vertical-align: middle;
+}
+
+
+
+
+
+  table td,th{
+    padding:0 16px;
+    
+  }
+
+  .table__name{
+    display: flex;
+    align-items: center;
+  }
+ 
+
+  td,th{
+    background-color: #fff;
+  }
+
+  .downloadcomplete__status{
+    font-size: 11px;
+    letter-spacing: 0.15px;
+    margin-top: 6px;
+    text-transform: capitalize;
+  }
+    .btn{
+        padding: 5px 25px 5px 25px;
+        border-radius: 3px;
+        height: 23px;
+        border:none;
+        color: #ffffff;
+        width: 78px;
+        font-size: 11px;
+        text-align: center;
+        font-weight: 500;
+        display: flex;
+        justify-content: center;
+    }
+
+    .btn__invited{
+        background-color: #6200EE;
+    }
+
+    .btn__not-invited{
+        background-color: #E21926;
+    }
+
+
+
+
+
+  
+
+
   
